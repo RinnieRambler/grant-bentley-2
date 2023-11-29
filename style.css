@@ -12,3 +12,9 @@
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: '#A58958';
+  color: white;
+}

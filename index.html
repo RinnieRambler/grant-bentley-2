@@ -1,3 +1,51 @@
 ---
 layout: default
+banner-image: 
 ---
+
+<!--------- pulling in header banner ----->
+
+<!--------- About blurb -------->
+
+<section class="border-y-4 border-y-gold bg-dark text-white">
+    <h2>Short<span class="text-gold"> about blurb</span></h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quisquam! Quidem accusamus, ab quis laborum ea labore necessitatibus. Numquam fugit ullam ab eveniet libero architecto quaerat sunt possimus dolores nihil?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quisquam! Quidem accusamus, ab quis laborum ea labore necessitatibus. Numquam fugit ullam ab eveniet libero architecto quaerat sunt possimus dolores nihil? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quisquam! Quidem accusamus, ab quis laborum ea labore necessitatibus. Numquam fugit ullam ab eveniet libero architecto quaerat sunt possimus dolores nihil?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quisquam! Quidem accusamus, ab quis laborum ea labore necessitatibus. Numquam fugit ullam ab eveniet libero architecto quaerat sunt possimus dolores nihil? Nisi, quisquam! Quidem accusamus, ab quis laborum</p>
+    <a href="#" clsss="button">Find out more</a>
+</section>
+
+<!--------- Quote section ---------->
+
+<section style="background-image: url()" class="bg-dark ">
+    <h3 class="text-white text-center">Culinary influences from this and that and the next thing</h3> <!--------Why is text-white not working now ive added custom colours-->
+</section>
+
+<!-------- Testimonials pull in from data file -------> 
+
+<section class="bg-gold text-black flex basis-1">
+    <h4>Testimonials</h4>
+    {% for item site.data.testimonials %}
+    <div>
+        <p>{{item.testimonial}}</p>
+    </div>
+    {% endfor %}
+</section>
+
+<!--------- Image nav block -------->
+
+<section>
+    <div>
+        <div style="background-image: url()" class="border-l-2 border-gold">
+            <a href="#">Discover menus</a>
+        </div>
+        <div style="background-image: url()" class="border-l-2 border-gold">
+            <a href="#">View gallery</a>
+        </div>
+        <div style="background-image: url()">
+            <a href="#">Contact me</a>
+        </div>
+    </div>
+</section>
+
+<!-------- Footer being pulled in ----------->

@@ -7,6 +7,13 @@ module.exports = {
     './*.{html,js,md}'
   ],
   theme: {
+    colors: {
+      'gold': '#A58958',
+      'light-gold': '#BFB29E',
+      'dark': '#232628',
+      'grey-dark': '#AAA2A0',
+      'grey-light': '#EFEEEC',
+    },
     fontSize: {
       xs: ['0.75rem', '1.2'],
       sm: ['0.875rem;', '1.2'],
