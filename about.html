@@ -63,3 +63,19 @@ banner-position: 50% 50%
         <div style="background-image: url(/assets/images/gb-images/food-style.jpg)" class="bg-cover bg-center min-h-70 aspect-portrait"></div>
     </div>
 </section>
+
+<!--------------- FAQ section -------------->
+
+<section>
+    <div>
+        <h2>Random Facts</h2>
+        <div>
+            {% for item in site.data.faqs %}
+            <div>
+            <h2>Q.{{item.question}}</h2>
+            <p>A.{{item.answer}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
