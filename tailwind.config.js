@@ -13,6 +13,7 @@ module.exports = {
       'dark': '#232628',
       'grey-dark': '#AAA2A0',
       'grey-light': '#EFEEEC',
+      'white': '#EEEEEE',
     },
     fontSize: {
       xs: ['0.75rem', '1.2'],
@@ -54,6 +55,7 @@ module.exports = {
         '70': '70vh',
         '60': '60vh',
         '50': '50vh',
+        '40': '40vh',
       },
       aspectRatio: {
         'landscape': '3 / 2',

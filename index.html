@@ -1,6 +1,7 @@
 ---
 layout: default
-banner-image: 
+banner-image: /assets/images/gb-images/home-banner.jpg
+banner-position: 50% 65%
 ---
 
 <!--------- pulling in header banner ----->
@@ -17,17 +18,17 @@ banner-image:
 
 <!--------- Quote section ---------->
 
-<section style="background-image: url()" class="bg-dark ">
+<section style="background-image: url(/assets/images/gb-images/quote-banner.jpg)" class="bg-dark min-h-70 bg-cover bg-[50%_70%]">
     <h3 class="text-white text-center">Culinary influences from this and that and the next thing</h3> <!--------Why is text-white not working now ive added custom colours-->
 </section>
 
 <!-------- Testimonials pull in from data file -------> 
 
-<section class="bg-gold text-black flex basis-1">
+<section class="bg-gold text-black flex basis-1 min-h-50">
     <div>
         <h4>Testimonials</h4>
         <div class="slider text-center">
-        {% for item site.data.testimonials %}
+        {% for item in site.data.testimonials %}
             <div>
                 <p>{{item.testimonial}}</p>
             </div>
@@ -39,14 +40,14 @@ banner-image:
 <!--------- Image nav block -------->
 
 <section>
-    <div>
-        <div style="background-image: url()" class="border-l-2 border-gold">
+    <div class="grid grid-cols-3 min-h-70">
+        <div style="background-image: url(/assets/images/gb-images/menu-nav-1.jpg)" class="border-r-4 border-gold bg-cover bg-center">
             <a href="#">Discover menus</a>
         </div>
-        <div style="background-image: url()" class="border-l-2 border-gold">
+        <div style="background-image: url(/assets/images/gb-images/menu-nav-2.jpg)" class="border-r-4 border-gold bg-cover bg-center">
             <a href="#">View gallery</a>
         </div>
-        <div style="background-image: url()">
+        <div style="background-image: url(/assets/images/gb-images/menu-nav-3.jpg)" class="bg-cover bg-center">
             <a href="#">Contact me</a>
         </div>
     </div>
