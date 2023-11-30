@@ -20,7 +20,7 @@ banner-position: 50% 65%
 
 <!--------- Quote section ---------->
 
-<section style="background-image: url(/assets/images/gb-images/quote-banner.jpg)" class="bg-dark min-h-70 bg-cover bg-[50%_70%] bg-blend-overlay">
+<section style="background-image: url(/assets/images/gb-images/quote-banner.jpg)" class="bg-dark bg-blend-overlay min-h-70 bg-cover bg-[50%_70%] ">
     <div class=" min-h-70 flex justify-center items-center">
         <h2 class="text-white text-center w-[50vw] font-extrabold">Culinary influences from this and that and the next thing</h2> 
     </div>
@@ -28,13 +28,16 @@ banner-position: 50% 65%
 
 <!-------- Testimonials pull in from data file -------> 
 
-<section class="bg-gold text-black flex basis-1 min-h-50">
-    <div>
-        <h4>Testimonials</h4>
+<!----------CAN'T RMEMEBER HOW TO TURN THIS INTO A SLICK SLIDER -->
+
+<section class="bg-gold text-black min-h-50">
+    <div class="p-5p">
+        <h4 class="py-5 text-center">Testimonials</h4>
         <div class="slider text-center">
         {% for item in site.data.testimonials %}
             <div>
                 <p>{{item.testimonial}}</p>
+                <p>- {{item.person}}, {{item.company}}</p>
             </div>
         {% endfor %}
         </div>
@@ -43,15 +46,15 @@ banner-position: 50% 65%
 
 <!--------- Image nav block -------->
 
-<section class="bg-dark"> <!----- why is bg-overlay not working?!!! -->
+<section class=""> <!----- why is bg-overlay not working?!!! -->
     <div class="grid grid-cols-3 min-h-70 text-white text-4xl ">
-        <div style="background-image: url(/assets/images/gb-images/menu-nav-1.jpg)" class="border-r-4 border-gold bg-cover bg-center relative overlay-bg-image">
+        <div style="background-image: url(/assets/images/gb-images/menu-nav-1.jpg)" class="border-r-4 border-gold bg-cover bg-center relative bg-dark bg-blend-overlay">
             <a href="/menus.html" class="inline-block p-10p absolute bottom-0 left-0 hover:text-light-gold hover:font-semi-bold">Discover<br> menus</a>
         </div>
-        <div style="background-image: url(/assets/images/gb-images/menu-nav-2.jpg)" class="border-r-4 border-gold bg-cover bg-center relative">
+        <div style="background-image: url(/assets/images/gb-images/menu-nav-2.jpg)" class="border-r-4 border-gold bg-cover bg-center relative bg-dark bg-blend-overlay">
             <a href="/gallery.html" class="inline-block p-10p absolute bottom-0 left-0 hover:text-light-gold hover:font-semi-bold">View<br> gallery</a>
         </div>
-        <div style="background-image: url(/assets/images/gb-images/menu-nav-3.jpg)" class="bg-cover bg-center relative ">
+        <div style="background-image: url(/assets/images/gb-images/menu-nav-3.jpg)" class="bg-cover bg-center relative bg-dark bg-blend-overlay">
             <a href="/contact.html" class="inline-block p-10p absolute bottom-0 left-0 hover:text-light-gold hover:font-semi-bold">Contact<br> me</a>
         </div>
     </div>

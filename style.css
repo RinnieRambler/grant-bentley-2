@@ -36,7 +36,7 @@ html {
   }
 
   p {
-      @apply mb-[1em] leading-normal font-body-text;
+      @apply mb-[1em] leading-average tracking-wide font-body-text;
   }
 
   a {

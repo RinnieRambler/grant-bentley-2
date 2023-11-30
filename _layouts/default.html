@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grant Bentley</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 
     <!---------Google Fonts Roboto 400 500 700 900 ------>
@@ -16,11 +16,23 @@
     <link rel="stylesheet" href="https://use.typekit.net/evu4cwc.css">
     <!--- Sofia pro 400 700 -->
     <link rel="stylesheet" href="https://use.typekit.net/evu4cwc.css">
+
+     <!-------jQuery------>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!------slick css ----->
+     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+   
 </head>
 
 
-<body><!----- do i need to use z index to overlay image? ----->
-    <header style="background-image:url({{page.banner-image}}); background-position:{{page.banner-position}}" class="bg-black p-5p min-h-100 bg-cover">
+<body>
+    <header style="background-image:url({{page.banner-image}}); background-position:{{page.banner-position}}" class="bg-dark bg-blend-overlay p-5p min-h-100 bg-cover">
         <div class="flex justify-between items-center">
             <nav>
                 <a href="/index.html" class="text-gold text-6xl hover:text-white">Logo</a>
@@ -51,5 +63,23 @@
         </div>
         <div class="bg-gold min-h-[2rem]"></div>
     </footer>
+
+     <!-- ---- My own JavaScript -----
+     <script src="/main.js"></script>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.your-class').slick({
+            setting-name: setting-value
+        });
+        });
+    </script> -->
+
+      
 </body>
 </html>

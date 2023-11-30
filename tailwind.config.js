@@ -7,14 +7,7 @@ module.exports = {
     './*.{html,js,md}'
   ],
   theme: {
-    colors: {
-      'gold': '#A58958',
-      'light-gold': '#BFB29E',
-      'dark': '#232628',
-      'grey-dark': '#AAA2A0',
-      'grey-light': '#EFEEEC',
-      'white': '#EEEEEE',
-    },
+  
     fontSize: {
       xs: ['0.75rem', '1.2'],
       sm: ['0.875rem;', '1.2'],
@@ -36,12 +29,22 @@ module.exports = {
       'body-text': ['sofia-pro', 'ui-sans-serif'],
     },
     extend: {
+      colors: {
+        'gold': '#A58958',
+        'light-gold': '#BFB29E',
+        'dark': '#232628',
+        'grey-dark': '#AAA2A0',
+        'grey-light': '#EFEEEC',
+        'white': '#EEEEEE',
+      },
       lineHeight: {
         'tight': '.85',
         'snug': '.95',
+        'average': '1.625rem',
         '12': '3rem',
       },
       spacing: {
+        '2p': '2%',
         '5p': '5%',
         '10p': '10%',
         '15p': '15%',

@@ -14,7 +14,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: currentColor; /* 2 */
+  border-color: #e5e7eb; /* 2 */
 }
 ::before,
 ::after {
@@ -343,7 +343,8 @@ h4 {
 p {
   margin-bottom: 1em;
   font-family: sofia-pro, ui-sans-serif;
-  line-height: 1.5;
+  line-height: 1.625rem;
+  letter-spacing: 0.025em;
 }
 a {
   font-family: sofia-pro, ui-sans-serif;
@@ -445,9 +446,6 @@ a {
     padding: 0.5rem 1rem;
     display: inline-block;
   }
-.overlay-bg-image {
-    background-blend-mode: multiply;
-  }
 .absolute {
   position: absolute;
 }
@@ -459,6 +457,9 @@ a {
 }
 .left-0 {
   left: 0px;
+}
+.mt-15p {
+  margin-top: 15%;
 }
 .mt-8 {
   margin-top: 2rem;
@@ -478,14 +479,17 @@ a {
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
 .aspect-portrait {
   aspect-ratio: 4/5;
 }
-.min-h-50 {
-  min-height: 50vh;
+.min-h-40 {
+  min-height: 40vh;
 }
 .min-h-100 {
   min-height: 100vh;
@@ -496,11 +500,14 @@ a {
 .min-h-70 {
   min-height: 70vh;
 }
+.min-h-50 {
+  min-height: 50vh;
+}
+.w-full {
+  width: 100%;
+}
 .w-\[50vw\] {
   width: 50vw;
-}
-.basis-1 {
-  flex-basis: 0.25rem;
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -520,6 +527,18 @@ a {
 .gap-8 {
   gap: 2rem;
 }
+.gap-16 {
+  gap: 4rem;
+}
+.gap-36 {
+  gap: 9rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-24 {
+  gap: 6rem;
+}
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
@@ -532,6 +551,16 @@ a {
 .border-r-4 {
   border-right-width: 4px;
 }
+.border-t-8 {
+  border-top-width: 8px;
+}
+.border-t-\[2rem\] {
+  border-top-width: 2rem;
+}
+.border-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(35 38 40 / var(--tw-border-opacity));
+}
 .border-gold {
   --tw-border-opacity: 1;
   border-color: rgb(165 137 88 / var(--tw-border-opacity));
@@ -541,6 +570,10 @@ a {
   border-top-color: rgb(165 137 88 / var(--tw-border-opacity));
   border-bottom-color: rgb(165 137 88 / var(--tw-border-opacity));
 }
+.border-t-light-gold {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(191 178 158 / var(--tw-border-opacity));
+}
 .bg-gold {
   --tw-bg-opacity: 1;
   background-color: rgb(165 137 88 / var(--tw-bg-opacity));
@@ -548,6 +581,10 @@ a {
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(35 38 40 / var(--tw-bg-opacity));
+}
+.bg-light-gold {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 178 158 / var(--tw-bg-opacity));
 }
 .bg-cover {
   background-size: cover;
@@ -564,6 +601,9 @@ a {
 .p-10p {
   padding: 10%;
 }
+.p-8 {
+  padding: 2rem;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -571,6 +611,18 @@ a {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .py-10p {
   padding-top: 10%;
@@ -580,8 +632,47 @@ a {
   padding-left: 20%;
   padding-right: 20%;
 }
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.py-2p {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.pr-10p {
+  padding-right: 10%;
+}
+.pl-10p {
+  padding-left: 10%;
+}
+.pb-8 {
+  padding-bottom: 2rem;
+}
 .pb-5p {
   padding-bottom: 5%;
+}
+.pb-2p {
+  padding-bottom: 2%;
+}
+.pb-10p {
+  padding-bottom: 10%;
+}
+.pt-10p {
+  padding-top: 10%;
+}
+.pr-2p {
+  padding-right: 2%;
+}
+.pr-5p {
+  padding-right: 5%;
+}
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -593,9 +684,16 @@ a {
   font-size: 3.75rem;
   line-height: 1;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 1;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .font-extrabold {
   font-weight: 800;
@@ -608,8 +706,22 @@ a {
   --tw-text-opacity: 1;
   color: rgb(165 137 88 / var(--tw-text-opacity));
 }
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(35 38 40 / var(--tw-text-opacity));
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.opacity-75 {
+  opacity: 0.75;
+}
 .bg-blend-overlay {
   background-blend-mode: overlay;
+}
+.bg-blend-darken {
+  background-blend-mode: darken;
 }
 
 /* Custom CSS */
