@@ -13,6 +13,63 @@ html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
 
+/* ---------Default Styles to apply to whole project ------------ */
+
+@layer base {
+
+  h1, h2, h3, h4  {
+      @apply my-[0.75em];
+  }
+
+  h1 {
+      @apply text-9xl leading-tight font-sans-heading;
+  }
+  h2 {
+      @apply text-6xl leading-normal font-sans-sub uppercase;
+  }
+  h3 {
+      @apply text-3xl leading-normal font-sans-sub uppercase;
+  }
+
+  h4 {
+      @apply text-xl font-bold leading-normal capitalize font-body-text;
+  }
+
+  p {
+      @apply mb-[1em] leading-normal font-body-text;
+  }
+
+  a {
+      @apply font-body-text uppercase;
+  }
+
+}
+
+@layer components {
+  .button {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+  }
+
+  .overlay-bg-image {
+    background-blend-mode: multiply;
+  }
+  
+}
+
+ body .slick-next:before, body .slick-prev:before {
+ @apply text-dark
+}
+
+.expandButton span {
+  transition: all 3s;
+}
+
+.expandButton.active span{
+  transform: rotate(45deg);
+}
+
+
 .button {
   padding: 0.5rem 1rem;
   background-color: '#A58958';

@@ -5,38 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!---------Google Fonts Roboto 400 500 700 900 ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-------- Adobe Fonts  ----------->
+    <!---Proxima Nova 400 700-->
+    <link rel="stylesheet" href="https://use.typekit.net/evu4cwc.css">
+    <!--- Sofia pro 400 700 -->
+    <link rel="stylesheet" href="https://use.typekit.net/evu4cwc.css">
 </head>
 
 
-<body>
+<body><!----- do i need to use z index to overlay image? ----->
     <header style="background-image:url({{page.banner-image}}); background-position:{{page.banner-position}}" class="bg-black p-5p min-h-100 bg-cover">
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
             <nav>
-                <a href="/index.html" class="text-gold">Logo</a>
+                <a href="/index.html" class="text-gold text-6xl hover:text-white">Logo</a>
             </nav>
-            <nav class="text-white">
-                <a href="/about.html" >About</a>
-                <a href="/gallery.html">Gallery</a>
-                <a href="/menus.html">Menus</a>
-                <a href="/contact.html">Contact</a>
+            <nav class="text-white flex space-x-12">
+                <a href="/about.html" class="hover:text-gold hover:font-bold">About</a>
+                <a href="/gallery.html" class="hover:text-gold hover:font-bold">Gallery</a>
+                <a href="/menus.html" class="hover:text-gold hover:font-bold">Menus</a>
+                <a href="/contact.html" class="hover:text-gold hover:font-bold">Contact</a>
             </nav>
         </div>
     </header>
 
     {{content}}
 
-    <footer class="text-gold p-5p">
-        <div class="grid grid-cols-3">
-            <div><a href="#">LOGO</a></div>
+    <footer class="text-gold bg-dark ">
+        <div class="grid grid-cols-3 p-5p">
+            <div><a href="/index.html" class="text-6xl hover:text-white hover:font-bold">LOGO</a></div>
             <div></div>
-            <div>
-                <a href="#">About</a>
-                <a href="#">Menus</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact</a>
+            <div class="text-right">
+                <ul>
+                    <li><a href="/about.html" class="hover:text-white hover:font-bold">About</a></li>
+                    <li></li><a href="/menus.html" class="hover:text-white hover:font-bold">Menus</a></li>
+                    <li></li><a href="/gallery.html" class="hover:text-white hover:font-bold">Gallery</a></li>
+                    <li></li><a href="/contact.html" class="hover:text-white hover:font-bold">Contact</a></li>
+                </ul>
             </div>
         </div>
-        <div></div>
+        <div class="bg-gold min-h-[2rem]"></div>
     </footer>
 </body>
 </html>
