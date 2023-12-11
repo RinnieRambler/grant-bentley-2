@@ -1,4 +1,4 @@
-/ Step #1. Start with our constants to define all our buttons
+// Step #1. Start with our constants to define all our buttons
 const buttons = document.querySelectorAll('.expandButton');
 const expandingSections = document.querySelectorAll('.expandable');
 
@@ -35,40 +35,15 @@ buttons.forEach(button => {
 })
 
 
+$(document).ready(function(){
 $('.slider').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
-
-  $(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
-    });
-  });
+dots: true,
+infinite: true,
+speed: 300,
+slidesToShow: 1,
+adaptiveHeight: true
+});
+});
 
 
-$('.single-item-rtl').slick({
-    rtl: true
-  });
 
